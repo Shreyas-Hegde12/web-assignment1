@@ -3,28 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio-data</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #757575; /* Grey color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #757575; /* Grey color */
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #757575; /* Grey color */
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skills ul li {
+            padding: 5px;
+            background-color: #f9f9f9;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Bio-data</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="bio.html">Bio-data</a>
-        </nav>
-    </header>
-    <main>
+
+<header>
+    <h1>Biodata</h1>
+</header>
+
+<div class="container">
+
+    <!-- Profile Section -->
+    <div class="section">
+        <img src="https://cdn.pixabay.com/photo/2023/12/10/06/56/ai-generated-8440708_1280.png" alt="Profile Picture" class="profile-pic">
         <h2>Personal Information</h2>
-        <p>Name: [Your Name]</p>
-        <p>Age: [Your Age]</p>
-        <p>Hobbies: Reading, Coding, Music</p>
-        <blockquote>"Keep Learning and Growing."</blockquote>
-        <hr>
-    </main>
-    <footer>
-        <p>&copy; 2024 [Your Name]</p>
-    </footer>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Shreyas Hegde</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>January 4, 2003</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Above earth, below sky, India</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>shreyashegde@example.com</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>100 100 100</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Bachelor of Science in Computer Science</td>
+                <td>XYZ University</td>
+                <td>2012</td>
+            </tr>
+            <tr>
+                <td>Master of Science in Software Engineering</td>
+                <td>ABC University</td>
+                <td>2015</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Work Experience Section -->
+    <div class="section">
+        <h2>Work Experience</h2>
+        <table>
+            <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Software Developer</td>
+                <td>Tech Solutions Inc.</td>
+                <td>2016 - 2018</td>
+            </tr>
+            <tr>
+                <td>Senior Software Engineer</td>
+                <td>Innovative Systems Ltd.</td>
+                <td>2018 - Present</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Java, Python, JavaScript</li>
+            <li>Web Development: HTML, CSS, React, Node.js</li>
+            <li>Database: MySQL, MongoDB</li>
+            <li>Software Development Life Cycle (SDLC)</li>
+            <li>Problem Solving and Algorithm Design</li>
+        </ul>
+    </div>
+
+</div>
+
 </body>
 </html>
