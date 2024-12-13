@@ -1,5 +1,6 @@
 window.onload = function() {
-    alert('Welcome to my personal website!');
+    if(window.location.pathname == '/')
+        alert('Welcome to my personal website!');
 };
 document.addEventListener('DOMContentLoaded', function() {
     var colorButton = document.createElement('button');
